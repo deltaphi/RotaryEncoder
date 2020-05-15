@@ -12,7 +12,11 @@
 #ifndef RotaryEncoder_h
 #define RotaryEncoder_h
 
+#ifdef ARDUINO
 #include "Arduino.h"
+#else
+#include <cstdint>
+#endif
 
 #define LATCHSTATE 3
 
